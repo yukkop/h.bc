@@ -19,7 +19,6 @@
   outputs = { self, nixpkgs, rust-overlay, y-util }:
   let
     overlays = [ (import rust-overlay) ];
-
   in
   y-util.lib.forAllSystemsWithPkgs overlays ({ system, pkgs }:
     let

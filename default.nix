@@ -1,12 +1,13 @@
 { nativeBuildInputs, pkgs, ... }:
 let
-name = "bc";
-getVersion = src: (builtins.fromTOML (builtins.readFile "${src}/Cargo.toml")).package.version;
 src = ./.;
+cargo' = src: (builtins.fromTOML (builtins.readFile "${src}/Cargo.toml"));
+cargo = cargo' src;
+name = cargo.package.name;
 in
 pkgs.rustPlatform.buildRustPackage {
   pname = "${name}";
-  version = getVersion src;
+  version = cargo.package.version;
 
   inherit nativeBuildInputs src;
 

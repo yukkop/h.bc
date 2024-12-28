@@ -49,11 +49,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1735403170,
-        "narHash": "sha256-bVx5kOf7YXEHsgjJ39uPKXYIOYrLVCM+UCW7wkr85CE=",
+        "lastModified": 1735407409,
+        "narHash": "sha256-nMOMdfjx6+x1eF++d3M4h504tgghAAEagPmNmxCaNCo=",
         "owner": "yukkop",
         "repo": "y.util.nix",
-        "rev": "d26d4d563c5ab024c1c6bb5c1432a4d9ae5e902e",
+        "rev": "f5ac429c7718e09b8bee888909fc48ac0281c0aa",
         "type": "github"
       },
       "original": {

@@ -1,5 +1,5 @@
 [package]
-name = "bc"
+name = "pg_mmd"
 version = "0.1.0"
 edition = "2021"
 
