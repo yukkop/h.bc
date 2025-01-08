@@ -30,8 +30,7 @@
     in
     {
       packages.${system} = {
-        default = self.packages.${system}.bc;
-        bc = pkgs.callPackage ./default.nix { inherit pkgs nativeBuildInputs; };
+        default = pkgs.callPackage ./default.nix { inherit pkgs nativeBuildInputs; };
       };
     }) // {};
 }
